@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Provider } from "@/components/ui/provider";
 import "./globals.css";
+import "@radix-ui/themes/styles.css";
+import { Theme } from "@radix-ui/themes";
+import { ThemeProvider } from "@/components/ui/theme-provider";
 
 export const metadata: Metadata = {
   title: "Kith Financial Management",
@@ -16,7 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`antialiased`}>
-        <Provider>{children}</Provider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Theme>{children}</Theme>
+        </ThemeProvider>
       </body>
     </html>
   );
