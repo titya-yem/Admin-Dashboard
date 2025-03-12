@@ -29,9 +29,9 @@ const Navbar = () => {
 
   return (
     <header>
-      <Container className="py-4 bg-white dark:bg-gray-800 shadow-md dark:shadow-none">
+      <Container className="py-4 bg-white dark:bg-gray-800 shadow dark:shadow-none">
         {/* Desktop Nav */}
-        <div className="flex justify-between items-center px-2">
+        <div className="flex justify-between items-center px-4">
           <div className="flex items-center gap-4">
             <Link href="/">
               <Image src={logo} alt="Kith Financial logo" width={150} />
@@ -64,7 +64,12 @@ const Navbar = () => {
           {/* Mobile Nav */}
           <Sheet open={isOpen} onOpenChange={() => setIsOpen(!isOpen)}>
             <SheetTrigger className="md:hidden">
-              <Image src={menu} alt="toggle menu" width={20} />
+              <Image
+                src={menu}
+                alt="toggle menu"
+                width={20}
+                className="dark:invert"
+              />
             </SheetTrigger>
             <SheetContent className="w-2/3">
               <SheetHeader>
