@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import heroImage from "@/../public/hero-image.png";
 import Features from "@/components/Features";
+import UserCommunity from "@/components/UserCommunity";
 
 const Home = () => {
   // Get user's name from Clerk and push user to
@@ -63,6 +64,7 @@ const Home = () => {
 
       {/* Other components in Home page */}
       <Features />
+      <UserCommunity />
     </>
   );
 };
