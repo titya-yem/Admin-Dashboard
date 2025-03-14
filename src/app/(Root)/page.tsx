@@ -4,6 +4,7 @@ import phone from "@/../public/svg/Phone.svg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import heroImage from "@/../public/hero-image.png";
+import Features from "@/components/Features";
 
 const Home = () => {
   // Get user's name from Clerk and push user to
@@ -59,6 +60,9 @@ const Home = () => {
           </Box>
         </main>
       </Container>
+
+      {/* Other components in Home page */}
+      <Features />
     </>
   );
 };
