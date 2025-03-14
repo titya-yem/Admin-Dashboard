@@ -38,12 +38,14 @@ const Home = () => {
                   (+1) 123-456-7890
                 </Text>
               </div>
-              <Button
-                variant="ghost"
-                className="px-8 py-5 text-sm md:text-base rounded-full text-white bg-[#007ACC]"
-              >
-                <Link href={`/Dashboard`}>Get Started</Link>
-              </Button>
+              <Link href="/Dashboard" passHref>
+                <Button
+                  variant="ghost"
+                  className="px-8 py-5 text-sm md:text-base rounded-full duration-200 text-white bg-[#007ACC] hover:text-[#007ACC] cursor-pointer"
+                >
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </Box>
 
@@ -52,7 +54,7 @@ const Home = () => {
             <Image
               src={heroImage}
               alt="Personal dashboard powered-by AI"
-              className="md:absolute md:top-18 md:right-0 w-[500px] md:w-[350px] lg:w-[480px] xl:w-[500px] pt-[1px]"
+              className="md:absolute md:top-18 md:right-0 min-[1650px]:!right-2/12 w-[500px] md:w-[350px] lg:w-[480px] xl:w-[500px] pt-[1px]"
             />
           </Box>
         </main>
