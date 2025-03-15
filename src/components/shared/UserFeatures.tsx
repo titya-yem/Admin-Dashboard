@@ -19,6 +19,8 @@ const UserFeatures = (featuresProps: featuresProps) => {
               src={image}
               alt="Saving Plan"
               width={50}
+              height={50}
+              unoptimized
               className="p-2 rounded-full bg-gray-200"
             />
             <h2 className="text-xl md:text-2xl font-bold">{heading}</h2>
