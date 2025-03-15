@@ -21,9 +21,9 @@ const UserFeatures = (featuresProps: featuresProps) => {
               width={50}
               className="p-2 rounded-full bg-gray-200"
             />
-            <h2 className="text-2xl font-bold">{heading}</h2>
+            <h2 className="text-xl md:text-2xl font-bold">{heading}</h2>
           </div>
-          <Text as="p" className="pl-20 mt-2">
+          <Text as="p" className="text-sm lg:text-base pl-20 mt-2 ">
             {text}
           </Text>
         </Box>

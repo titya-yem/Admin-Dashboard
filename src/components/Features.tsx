@@ -14,7 +14,7 @@ const Features = () => {
         Our amazing features are most useful for the users
       </h1>
 
-      <div className="flex flex-wrap justify-center items-center gap-7 mt-12 md:mt-20">
+      <div className="flex flex-wrap justify-center items-center gap-7 mt-12 md:mt-14">
         <UserFeatures
           heading="Saving Plan"
           image={bankingImage}
