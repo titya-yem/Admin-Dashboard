@@ -1,9 +1,13 @@
 import { Box, Container, Text, Flex } from "@radix-ui/themes";
 import Image from "next/image";
 import communityImage from "@/../public/community-image.png";
-import { userCommunityLists } from "@/constants/UserCommunity";
+import { userCommunityProps } from "@/constants/UserCommunity";
 
-const UserCommunity = () => {
+const UserCommunity = ({
+  userCommunityLists,
+}: {
+  userCommunityLists: userCommunityProps;
+}) => {
   return (
     <Box className="mt-24 md:mt-28 py-10 bg-[#DBF0FF]">
       <Container>

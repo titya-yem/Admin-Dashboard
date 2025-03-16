@@ -3,14 +3,14 @@ import successImage from "@/../public/svg/Financial-Success.svg";
 import ratingImage from "@/../public/svg/Rating.svg";
 import happyImage from "@/../public/svg/Smiling.svg";
 
-type userCommunityProps = {
+export type userCommunityProps = {
   image: string;
   alt: string;
   heading: string;
   text: string;
-};
+}[];
 
-export const userCommunityLists: userCommunityProps[] = [
+export const userCommunityLists: userCommunityProps = [
   {
     image: userImage,
     alt: "Our active users",
