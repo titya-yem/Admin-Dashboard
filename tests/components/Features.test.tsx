@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import UserFeatures from "@/components/shared/UserFeatures";
 import "@testing-library/jest-dom";
 
-describe("UserFeatures Component", () => {
+describe("Features", () => {
   it("should render the heading", () => {
     render(<UserFeatures heading="Saving Plan" text="Test text" image="" />);
     const heading = screen.getByRole("heading");
