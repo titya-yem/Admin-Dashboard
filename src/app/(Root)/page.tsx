@@ -7,6 +7,7 @@ import heroImage from "@/../public/hero-image.png";
 import Features from "@/components/Features";
 import UserCommunity from "@/components/UserCommunity";
 import Support from "../../components/Support";
+import { userCommunityLists } from "@/constants/UserCommunity";
 
 const Home = () => {
   // Get user's name from Clerk and push user to
@@ -65,7 +66,7 @@ const Home = () => {
 
       {/* Other components in Home page */}
       <Features />
-      <UserCommunity />
+      <UserCommunity userCommunityLists={userCommunityLists} />
       <Support />
     </>
   );

@@ -1,4 +1,4 @@
-import { Box, Section, Text } from "@radix-ui/themes";
+import { Box, Text } from "@radix-ui/themes";
 import Image from "next/image";
 
 interface featuresProps {
